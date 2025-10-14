@@ -1,55 +1,47 @@
-/* --- HERO (photo left, text right) --- */
+/* === HERO SECTION: photo left, text right === */
 .hero {
   max-width: 1100px;
-  margin: 48px auto;
+  margin: 60px auto;
   padding: 0 20px;
 }
 
 .hero-inner {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 40px;
 }
 
-/* Container that crops the image to the top ~75% */
 .photo-wrap {
-  width: 42%;
+  width: 40%;
   max-width: 420px;
-  height: 440px;              /* controls how much of you shows */
-  overflow: hidden;           /* crops the rest */
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-  margin: 0;
+  height: 420px;        /* controls how much of you is shown */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Make the image fill & crop from the top */
 .photo-crop {
   width: 100%;
   height: 100%;
-  object-fit: cover;          /* fill the frame, crop excess */
-  object-position: 50% 12%;   /* <- nudges framing: 12% from top shows jacket button-ish */
+  object-fit: cover;
+  object-position: 50% 12%;   /* adjust this number to fine-tune framing */
   display: block;
 }
 
-/* Text column */
 .bio {
   flex: 1;
   font-size: 1.08rem;
   line-height: 1.7;
 }
 
-/* Responsive: stack on small screens */
-@media (max-width: 820px) {
+/* Responsive stacking for small screens */
+@media (max-width: 800px) {
   .hero-inner {
     flex-direction: column;
     align-items: flex-start;
   }
   .photo-wrap {
     width: 100%;
-    max-width: 700px;
-    height: 380px;            /* slightly shorter crop on mobile */
-  }
-  .bio {
-    width: 100%;
+    height: 380px;
   }
 }

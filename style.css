@@ -1,23 +1,18 @@
-/* ----------- GENERAL STYLES ----------- */
+/* ----------- GENERAL ----------- */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f7f9fc;
+  background: #f9fafc;
   color: #333;
 }
 
 /* ----------- HEADER ----------- */
 header {
-  background: #003366;
+  background: #004080;
   color: white;
   text-align: center;
   padding: 1em 0;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2em;
 }
 
 nav ul {
@@ -26,7 +21,7 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
-  background: #00254d;
+  background: #003060;
 }
 
 nav ul li {
@@ -38,17 +33,16 @@ nav ul li a {
   text-decoration: none;
   padding: 14px 20px;
   display: block;
-  font-size: 0.95rem;
 }
 
 nav ul li a:hover {
-  background: #004c99;
+  background: #0050a0;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #00254d;
+  background-color: #003060;
   min-width: 180px;
   z-index: 1;
 }
@@ -63,17 +57,17 @@ nav ul li a:hover {
   display: block;
 }
 
-/* ----------- ABOUT SECTION ----------- */
-.about {
+/* ----------- INTRO SECTION ----------- */
+.intro-section {
   max-width: 1100px;
   margin: 60px auto;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 40px;
 }
 
-.about-container {
+.intro-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,36 +75,32 @@ nav ul li a:hover {
   flex-wrap: wrap;
 }
 
-.about-photo {
-  flex: 0 0 320px;
+.photo-container {
+  flex: 0 0 350px;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.about-photo img {
+.photo-container img {
   width: 100%;
   height: 420px;
   object-fit: cover;
-  object-position: 50% 15%; /* crop from top to jacket area */
+  object-position: 50% 15%; /* Crops around jacket button area */
   display: block;
   border-radius: 10px;
 }
 
-.about-text {
+.text-container {
   flex: 1;
   font-size: 1.1rem;
   line-height: 1.7;
 }
 
-.about-text p {
-  margin-bottom: 1em;
-}
-
 /* ----------- FOOTER ----------- */
 footer {
   text-align: center;
-  background: #00254d;
+  background: #003060;
   color: white;
   padding: 0.8em 0;
   font-size: 0.9em;
@@ -119,21 +109,21 @@ footer {
 
 /* ----------- RESPONSIVE ----------- */
 @media (max-width: 850px) {
-  .about-container {
+  .intro-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .about-photo {
+  .photo-container {
     flex: none;
     width: 90%;
   }
 
-  .about-photo img {
+  .photo-container img {
     height: 360px;
   }
 
-  .about-text {
+  .text-container {
     width: 100%;
     text-align: center;
   }

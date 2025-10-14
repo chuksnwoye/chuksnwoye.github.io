@@ -1,0 +1,100 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fafc;
+  color: #333;
+}
+
+header {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: #003060;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: #0050a0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #003060;
+  min-width: 180px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main {
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.home {
+  text-align: center;
+}
+
+.profile-photo {
+  width: 220px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+  border: 3px solid #004080;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 10px 18px;
+  background: #004080;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-btn:hover {
+  background: #005bbb;
+}
+
+footer {
+  text-align: center;
+  background: #003060;
+  color: white;
+  padding: 0.8em 0;
+  font-size: 0.9em;
+  margin-top: 40px;
+}

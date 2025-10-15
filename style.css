@@ -15,6 +15,26 @@ header {
   padding: 1em 0;
 }
 
+/* ----------- SUBPAGE HEADER ----------- */
+header.subpage {
+  position: relative;
+}
+
+header.subpage a {
+  color: white;               /* makes "Back to Home" white */
+  text-decoration: none;
+  font-weight: 500;
+  position: absolute;
+  left: 20px;                 /* position on the left */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+header.subpage a:hover {
+  text-decoration: underline; /* subtle hover effect */
+}
+
+/* ----------- NAVIGATION BAR ----------- */
 nav ul {
   list-style: none;
   margin: 0;
@@ -86,7 +106,7 @@ nav ul li a:hover {
   width: 100%;
   height: 420px;
   object-fit: cover;
-  object-position: 50% 15%; /* Crops around jacket button area */
+  object-position: 50% 15%;
   display: block;
   border-radius: 10px;
 }
